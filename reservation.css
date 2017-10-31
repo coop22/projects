@@ -1,0 +1,15 @@
+div{
+    display: inline-block;
+    width:100px;
+    height: 50px;
+    border: 1px solid;
+    text-align: center;
+   }
+   
+   .clicked{
+    background-color: yellow;
+   }
+   
+   span {
+    display: none;
+   }
