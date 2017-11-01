@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app>
+
+<head>
+
+</head>
+
+<body>
+    <div>
+        <label>Noun:</label>
+        <input type="text" ng-model="noun" placeholder="Enter a noun here">
+        <br>
+        <label>Adjective:</label>
+        <input type="text" ng-model="adjective" placeholder="Enter an adjective here">
+        <br>
+        <label>{{noun}}s' Age:</label>
+        <input type="number" ng-model="age" placeholder="Enter age here">
+
+
+        <hr>
+        <h1>The
+            <span ng-if="noun">{{noun}}</span>
+            <span ng-if="!noun">______</span> is friends with the
+            <span ng-if="adjective">{{adjective}}</span>
+            <span ng-if="!adjective">_______</span> President!</h1>
+        <h2>{{noun}} is {{ age }} </h2>
+        <h3> The {{noun}} is
+            <span ng-if="age > 71">older than the President </span>
+            <span ng-if="age <= 71">younger than the President</span>
+        </h3>
+
+        >
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+</body>
+
+</html>
